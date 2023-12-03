@@ -226,11 +226,11 @@ Section:NewButton("Sukuna Wessel", "ButtonInfo", function()
 local args = {
     [1] = {
         ["Object"] = "Vessel_Finger",
-     ["Action"] = "Use"
+        ["Action"] = "Use"
     }
 }
 
-game:GetServices("Players").LocalPlayer.PlayerGui.Main_UI.Handle.Server.Inv:FireServer(unpack(args))
+game:GetService("Players").LocalPlayer.PlayerGui.Main_UI.Handle.Server.Inv:FireServer(unpack(args))
     end
 end)
 
