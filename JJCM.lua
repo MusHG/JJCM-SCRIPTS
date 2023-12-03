@@ -220,6 +220,23 @@ end)
 
 
 
+Section:NewButton("Sukuna Wessel", "ButtonInfo", function()
+    while true do
+        wait(1)
+local args = {
+    [1] = {
+        ["Object"] = "Vessel_Finger",
+     ["Action"] = "Use"
+    }
+}
+
+game:GetServices("Players").LocalPlayer.PlayerGui.Main_UI.Handle.Server.Inv:FireServer(unpack(args))
+    end
+end)
+
+
+
+
 Section:NewButton("Tp to ClanOrb", "ButtonInfo", function()
     local player = game.Players.LocalPlayer
 local workspace = game.Workspace
